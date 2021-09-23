@@ -10,8 +10,6 @@ env:
   GIT_EMAIL: sfl05@163.com
   THEME_REPO: fi3ework/hexo-theme-archer
   THEME_BRANCH: master
-  DEPLOY_REPO: snipersteve/fangfang-blog
-  DEPLOY_BRANCH: source
 
 jobs:
   build:
@@ -50,8 +48,8 @@ jobs:
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
           cp _config.theme.yml themes/archer/_config.yml
+          cp CNAME public/CNAME
           
-
       - name: Install dependencies
         run: |
           npm install

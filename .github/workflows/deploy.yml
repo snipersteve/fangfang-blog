@@ -11,7 +11,7 @@ env:
   THEME_REPO: fi3ework/hexo-theme-archer
   THEME_BRANCH: master
   DEPLOY_REPO: snipersteve/fangfang-blog
-  DEPLOY_BRANCH: hexo
+  DEPLOY_BRANCH: source
 
 jobs:
   build:

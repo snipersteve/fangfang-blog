@@ -50,7 +50,7 @@ jobs:
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
           cp _config.theme.yml themes/archer/_config.yml
-          cp CNAME .deploy_git/CNAME
+          
 
       - name: Install dependencies
         run: |
